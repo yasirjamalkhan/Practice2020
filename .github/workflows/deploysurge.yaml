@@ -27,6 +27,6 @@ jobs:
         node-version: 12  
         -name: install surge
         run: npm install --global surge
-         -name: Run Surge
+        - name: deploy Surge
           run: surge ./ Practice2020.surge.sh --token ${{secrets.Surge_Token}}
    
